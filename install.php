@@ -5,7 +5,7 @@ CREATE TABLE pupil
 (UserID INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 PID VARCHAR(1) NOT NULL,
 Name VARCHAR(20) NOT NULL,
-Balance VARCHAR(20) NOT NULL,");
+Balance VARCHAR(20) NOT NULL,)");
 $stmt->execute();
 $stmt->closeCursor();
 ?>
