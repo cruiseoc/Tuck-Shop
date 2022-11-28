@@ -8,7 +8,7 @@ include_once("connection.php");
 $stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Surname,Forename,Password,House,Year ,Role)VALUES (null,:gender,:surname,:forename,:password,:house,:year,:role)");
 
 
-?>
+
 
 <head>
 
@@ -41,12 +41,15 @@ $stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Surname,Forename,Password,H
       </div>
     </div>
 
+    $stmt = $conn->prepare("INSERT INTO TblUser (UserID,Gender,Surname,Forename,Password,House,Year ,Role)VALUES (null,:gender,:surname,:forename,:password,:house,:year,:role)");
+
+
+
   
 
 </body>
 </body>
 </html>
-
 
 
 

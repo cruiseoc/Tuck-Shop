@@ -2,7 +2,7 @@
 include_once("connection.php");
 $stmt = $conn->prepare("DROP TABLE IF EXISTS pupil;
 CREATE TABLE pupil 
-(UserID INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+(UserID int(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Name VARCHAR(20) NOT NULL,
 Password VARCHAR(20) NOT NULL,
 Balance VARCHAR(20) NOT NULL)");
