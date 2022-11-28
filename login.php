@@ -1,3 +1,17 @@
+<form action="addusers.php">
+
+<!DOCTYPE html>
+<html>
+<?php
+
+include_once("connection.php");
+$stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Surname,Forename,Password,House,Year ,Role)VALUES (null,:gender,:surname,:forename,:password,:house,:year,:role)");
+
+
+?>
+
+<head>
+
 <h1 style = background-color: #fff; height: 45px; width: 360px; padding: 8% 0 0; margin: auto;position: relative;z-index: 1;background: #FFFFFF;max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -15,10 +29,24 @@
         <div class="login">
           <div class="login-header">
             <h31>Welcome to Oli's Tuck Shop</h1>
-            <p1>Become a member</p1>
+            <p1>Please enter your credentials to login.</p1>
           </div>
         </div>
         <form class="login-form">
           <input type="text" placeholder="username"/>
           <input type="password" placeholder="password"/>
           <button>login</button>
+          <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+      </div>
+    </div>
+
+  
+
+</body>
+</body>
+</html>
+
+
+
+
