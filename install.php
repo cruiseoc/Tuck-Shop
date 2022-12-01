@@ -20,20 +20,20 @@ Cancelled VARCHAR(1) NOT NULL)");
 $stmt1->execute();
 $stmt1->closeCursor();
 
-$stmt1 = $conn->prepare("DROP TABLE IF EXISTS Baskets;
+$stmt2= $conn->prepare("DROP TABLE IF EXISTS Baskets;
 CREATE TABLE Baskets
 (OrderID INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 TuckID INT(4) NOT NULL, 
 QTY INT(3) NOT NULL)");
-$stmt1->execute();
-$stmt1->closeCursor();
+$stmt2->execute();
+$stmt2->closeCursor();
 
-$stmt1 = $conn->prepare("DROP TABLE IF EXISTS Tuck;
+$stmt3 = $conn->prepare("DROP TABLE IF EXISTS Tuck;
 CREATE TABLE Tuck
 (TuckID INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Name VARCHAR(20) NOT NULL, 
 Cost INT(20) NOT NULL,
 QTY INT(3) NOT NULL)");
-$stmt1->execute();
-$stmt1->closeCursor();
+$stmt3->execute();
+$stmt3->closeCursor();
 ?>

@@ -5,10 +5,10 @@
 <?php
 
 include_once("connection.php");
-$stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Surname,Forename,Password,House,Year ,Role)VALUES (null,:gender,:surname,:forename,:password,:house,:year,:role)");
+$stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Name,Password)VALUES (null,:gender,:surname,:forename,:password,:house,:year,:role)");
 
 
-
+?>
 
 <head>
 
@@ -33,23 +33,21 @@ $stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Surname,Forename,Password,H
           </div>
         </div>
         <form class="login-form">
-          <input type="text" placeholder="username"/>
+          <input type="text" placeholder="name"/>
           <input type="password" placeholder="password"/>
           <button>login</button>
-          <p class="message">Not registered? <a href="#">Create an account</a></p>
+          <p class="message">Not registered? <a href="#">Login</a></p>
         </form>
       </div>
     </div>
 
-    $stmt = $conn->prepare("INSERT INTO TblUser (UserID,Gender,Surname,Forename,Password,House,Year ,Role)VALUES (null,:gender,:surname,:forename,:password,:house,:year,:role)");
-
-
-
+    
   
 
 </body>
 </body>
 </html>
+
 
 
 
