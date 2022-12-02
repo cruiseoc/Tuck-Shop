@@ -3,7 +3,7 @@ try{
   include_once('connection.php');
   array_map("htmlspecialchars", $_POST);
 
-  header('Location:users.php');
+  header('Location:Tuck.php');
   //print_r($_POST);
 
 

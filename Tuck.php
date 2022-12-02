@@ -3,14 +3,14 @@
 
 <head>
 
-<title> Sign Up </title>
+<title> Add Tuck</title>
 </head>
 <body>
-            <h1>Welcome to Oli's Tuck Shop</h1><br>
-            <p>Please enter your credentials to sign up</p>
+            <h1>Add Tuck</h1><br>
+            <p>Enter the details of the tuck you want to add</p>
        
         <form action="addusers.php" method="POST">
-          <input type="text" placeholder="Name" name="Name">
+          <input type="text" placeholder="Tuck name" name="Name">
           <input type="text" placeholder="Cost"  name="Cost">
           <input type="text" placeholder="Quantity"  name="Quanitity">
           <input type="submit" value="Add Tuck">
@@ -23,7 +23,7 @@ $stmt->execute();
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 {
-echo($row["Name"].' '.$row["Cost"].' '.$row["Quantity"]"<br>");
+echo($row["Name"].' '.$row["Cost"].' '.$row["Quantity"]."<br>");
 }
 
 
