@@ -9,10 +9,10 @@
             <h1>Add Tuck</h1><br>
             <p>Enter the details of the tuck you want to add</p>
        
-        <form action="addusers.php" method="POST">
-          <input type="text" placeholder="Tuck name" name="Name">
-          <input type="text" placeholder="Cost"  name="Cost">
-          <input type="text" placeholder="Quantity"  name="Quanitity">
+        <form action="addtuck.php" method="POST">
+          <input type="text" placeholder="Tuck name" name="name">
+          <input type="text" placeholder="Cost"  name="cost">
+          <input type="text" placeholder="Quantity"  name="quantity">
           <input type="submit" value="Add Tuck">
         </form>
 <?php
