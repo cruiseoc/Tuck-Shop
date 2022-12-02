@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html>
-<?php
-include_once('connection.php');
-$stmt = $conn->prepare("INSERT INTO TblUsers (UserID, Name,Password,Role)VALUES (null,:name,:Password,:Role)");
 
-?>
 <head>
 
 <title> Sign Up </title>
 </head>
 <body>
-    <div class="login-page">
-      <div class="form">
-        <div class="login">
-          <div class="login-header">
-            <form action="addusers.php" method="Post">
-            <h31>Welcome to Oli's Tuck Shop</h1>
-            <p1>Please enter your credentials to sign up</p1>
-          </div>
-        </div>
-        <form class="login-form">
-          <input type="password" placeholder="create a password"/>
-          <input type="text" placeholder="name"/>
-          <input type="text" placeholder="balance"/>
-          <button>Sign Up</button>
+            <h1>Welcome to Oli's Tuck Shop</h1><br>
+            <p>Please enter your credentials to sign up</p>
+       
+        <form action="addusers.php" method="POST">
+          <input type="password" placeholder="create a password" name="password">
+          <input type="text" placeholder="name"  name="name">
+          <input type="text" placeholder="balance"  name="balance">
+          <input type="submit" value="Sign Up">
         </form>
-</div>
-</div>
 <?php
 
 include_once('connection.php');

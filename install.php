@@ -3,8 +3,8 @@ include_once("connection.php");
 $stmt = $conn->prepare("DROP TABLE IF EXISTS pupil;
 CREATE TABLE pupil 
 (UserID int(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+Password VARCHAR(200) NOT NULL,
 Name VARCHAR(20) NOT NULL,
-Password VARCHAR(20) NOT NULL,
 Balance VARCHAR(20) NOT NULL)");
 $stmt->execute();
 $stmt->closeCursor();
