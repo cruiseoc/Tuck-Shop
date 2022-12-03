@@ -19,35 +19,24 @@ $stmt = $conn->prepare("INSERT INTO pupil (PID,Names,Name,Password)VALUES (null,
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)>
 
 
-<link rel="stylesheet" href="style.css">
+  <!DOCTYPE html>
+<html>
+
+<head>
+
 <title> Login </title>
 </head>
 <body>
-  <body>
-    <div class="login-page">
-      <div class="form">
-        <div class="login">
-          <div class="login-header">
-            <h31>Welcome to Oli's Tuck Shop</h1>
-            <p1>Please enter your credentials to login.</p1>
-          </div>
-        </div>
-        <form class="login-form">
-          <input type="text" placeholder="name"/>
-          <input type="password" placeholder="password"/>
-          <button>login</button>
-          <p class="message">Not registered? <a href="#">Login</a></p>
-        </form>
-      </div>
-    </div>
-
+            <h1>Welcome to Oli's Tuck Shop</h1><br>
+            <p>Please enter your credentials to login</p>
+       
+            <form action="loginprocess.php" method= "POST">
+            <input type="text" placeholder="Name" name="Username"><br>
+            <input type="password" placeholder="password" name="Pword"><br>
+            <input type="submit" value="Login">
     
-  
-
-</body>
-</body>
-</html>
-
+            </form>
+<?php
 
 
 
