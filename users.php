@@ -15,16 +15,15 @@
           <input type="text" placeholder="balance"  name="balance">
           <input type="submit" value="Sign Up">
         </form>
+
+        <a href="login.php">Already have an account? Login</a>
+</body>
 <?php
 
 include_once('connection.php');
 $stmt = $conn->prepare("SELECT * FROM pupil");
 $stmt->execute();
 
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
-{
-echo($row["Name"].' '.$row["Balance"]."<br>");
-}
 
 
 ?>   

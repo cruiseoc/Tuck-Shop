@@ -1,3 +1,11 @@
+<?php
+session_start();
+if($_SESSION["loggedin"]!=7){
+    header('Location:menu.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 

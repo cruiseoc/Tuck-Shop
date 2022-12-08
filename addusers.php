@@ -4,7 +4,7 @@ try{
   array_map("htmlspecialchars", $_POST);
 
   header('Location:users.php');
-  //print_r($_POST);
+
 
 
   $stmt = $conn->prepare("INSERT INTO pupil(UserID,Name,Password,Balance)VALUES (null,:Name,:Password,:Balance)");
@@ -19,6 +19,5 @@ try{
        echo "error".$e->getMessage();
      }
    $conn=null;
-  
-  
 ?>
+
